@@ -39,8 +39,8 @@ function suit(){
 		txt.innerText = "Seri";
 		txtTgnBot.innerText = hasilCom;
 		tanganCom.src = "img/" + hasilCom + eks;
-	}else if (tangan == "Batu") {
-		if (hasilCom == "Kertas") {
+	}else if (tangan == "batu") {
+		if (hasilCom == "kertas") {
 			txt.innerText = "Kalah";
 			txtTgnBot.innerText = hasilCom;
 			tanganCom.src = "img/" + hasilCom + eks;
@@ -53,8 +53,8 @@ function suit(){
 			scorU++;
 			scorKamu.innerText = scorU;
 		}
-	}else if (tangan == "Kertas") {
-		if (hasilCom == "Gunting") {
+	}else if (tangan == "kertas") {
+		if (hasilCom == "gunting") {
 			txt.innerText = "Kalah";
 			txtTgnBot.innerText = hasilCom;
 			tanganCom.src = "img/" + hasilCom + eks;
@@ -67,8 +67,8 @@ function suit(){
 			scorU++;
 			scorKamu.innerText = scorU;
 		}
-	}else if (tangan == "Gunting") {
-		if (hasilCom == "Batu") {
+	}else if (tangan == "gunting") {
+		if (hasilCom == "batu") {
 			txt.innerText = "Kalah";
 			txtTgnBot.innerText = hasilCom;
 			tanganCom.src = "img/" + hasilCom + eks;
