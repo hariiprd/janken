@@ -1,0 +1,182 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: candara;
+}
+
+main{
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+}
+
+.judul{
+	padding: 60px 0 60px 60px;
+	background-color: #e20000;
+	color: white;
+}
+
+.navbar{
+	position: sticky;
+	background-color: black;
+	top: 0;
+}
+
+.navbar-item{
+	display: inline-block;
+	text-align: center;
+	color: white;
+}
+
+.navbar-item a{
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	width: 100px;
+	padding: 20px;
+	color: white;
+}
+
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.navbar-item a:hover{
+	background-color: #e20000;
+}
+
+p{
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.content-top{
+	flex: 6;
+}	
+
+article{
+	margin-right: 20px;
+}
+
+aside{
+	flex: 2;
+	margin: 20px;
+	text-align: center;
+}
+
+aside table{
+	margin: 10px auto;
+}
+
+aside img{
+	border-radius: 20px;
+}
+
+.image{
+	display: inline;
+}
+
+#rules{
+	overflow: auto;
+}
+
+#visible{
+	position: absolute;
+	cursor: pointer;
+	margin-top: 130px;
+	width: 20px;
+	height: 20px;
+}
+
+#visible:active{
+	border: 1px solid red;
+	border-radius: 0;
+}
+
+#profileimg{
+	 width: 150px;
+	 height: 150px;
+}
+
+#rules img{
+	 float: left;
+	 margin-right: 50px;
+}
+
+#vs{
+	margin: auto 0;
+	font-size: 30px;
+	color: red;
+}
+
+footer{
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+	color: white;
+	background-color: #e20000;
+}
+
+#player{
+	margin: auto 0;
+}
+
+.arena{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#game h1{
+	display: inline;
+}
+
+#play{
+	display: block;
+	margin: auto;
+	padding: 8px 13px;
+	cursor: pointer;
+}
+
+.arena img{
+	border: 2px solid green;
+	border-radius: 25px;
+	transition: 0.4s;
+}
+
+#player img{
+	cursor: pointer;
+}
+
+#player img:hover{
+	transform: scale(1.08);
+}
+
+#player img:active{
+	border-color: red;
+}
+
+#teks{
+	color: red;
+}
+
+#txtTgn,
+#txtTgnBot {
+	color: red;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+	.flex,
+	.arena { display: block; }
+}

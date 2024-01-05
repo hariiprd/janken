@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Permainan suit</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="judul">
+			<h1>Suit / Janken</h1>
+			<p>Permainan untuk mencari kesenangan, suit juga sering digunakan oleh beberapa orang untuk membuat keputusan.</p>
+		</div>
+		<nav class="navbar">
+			<div class="navbar-item"><a href="#sejarah">Sejarah</a></div>
+			<div class="navbar-item"><a href="#sebutan">Sebutan</a></div>
+			<div class="navbar-item"><a href="#rules">Rules</a></div>
+			<div class="navbar-item"><a href="#game">Game</a></div>
+		</nav>
+	</header>
+	<main>
+		<div id="content">
+			<div class="flex">
+				<article id="sejarah" class="card content-top">
+					<h1>Sejarah</h1>
+					<img src="img/suit.png" alt="Suit" class="image">
+					<p>Suit merupakan salah satu mainan anak-anak yang paling mudah dan banyak dimainkan oleh seluruh anak-anak. Bahkan suit dalam bentuk gunting batu kertas merupakan salah satu permainan yang tersebar dan banyak dikenal oleh berbagai orang di seluruh belahan dunia.</p>
+					<p>Dilansir dari The Atlantic, referensi tertua mengenai permainan hampir serupa dengan suit ini memiliki usia dua ribu tahun sebelum masehi dan terletak pada sebuah dinding makam di Beni Hasan, Mesir. Sumber lain menyatakan bahwa permainan ini juga ditemukan pada masyarakat Celtic yang tinggal di Spanyol dan Portugal saat ini.</p>
+					<p>Diketahui bahwa masyarakat Celtic telah menggunakan permainan ini sejak tahun 600 sebelum masehi. Invasi romawi yang terjadi sekitar tahun 100 adalah penyebab dari menyebarnya permainan ini ke seantero Eropa.</p>
+				</article>
+				<aside class="card">
+					<article>
+						<h1>My Profile</h1>
+						<br>
+						<figure>
+							<img src="img/profile.png" id="profileimg">
+							<img src="img/hide.png" id="visible" onclick="ChangeIMG()">
+							<figcaption><b>Hari Prediansyah</b></figcaption>
+						</figure>
+					</article>
+					<section>
+						<table>
+							<tr>
+								<th>Umur</th>
+								<td>18 tahun</td>
+							</tr>
+							<tr>
+								<th>Gender</th>
+								<td>Laki-Laki</td>
+							</tr>
+							<tr>
+								<th>Status</th>
+								<td>Pelajar</td>
+							</tr>
+							<tr>
+								<th>Sekolah</th>
+								<td>SMKN 1 Jakarta</td>
+							</tr>
+							<tr>
+								<th>Kelas</th>
+								<td>12</td>
+							</tr>
+							<tr>
+								<th>Jurusan</th>
+								<td>Sistem Informatika Jaringan dan Aplikasi</td>
+							</tr>
+							<tr>
+								<th>E-mail</th>
+								<td>coyhari9@gmail.com</td>
+							</tr>
+							<tr>
+								<th>Hobi</th>
+								<td>Ngoding</td>
+							</tr>
+						</table>
+					</section>
+				</aside>
+			</div>
+			<article id="sebutan" class="card">
+				<h1>Sebutan</h1>
+				<img src="img/history.jpg" alt="Janken di Jepang">
+				<p>Permainan batu-gunting-kertas ini di jepang dikenal sebagai janken atau jankenpon. Sebuah buku yang berasal dari tahun 1600 berjudul Wazazu dari Xie Zhaozhi menyebutkan bahwa pada masa itu permainan ini sangat populer dan dimainkan banyak orang.</p>
+				<p>Hal unik mengenai nama permainan ini terdapat di Prancis. Di negara tersebut, batu-gunting-kertas disebut sebagai Roshambo atau Rochambeu. Sebutan itu sendiri berasal dari seseorang yang bernama Jean Baptiste Donatien de Vimeur, Comte de Rochambeu dan mulai digunakan pada kisaran tahun 1700an. Namun dipercaya bahwa pria tersebut bukanlah orang pertama yang membawa dan mengenalkan permainan itu ke Prancis.</p>
+			</article>
+			<article id="rules" class="card">
+				<h1>Rules</h1>
+				<img src="img/rules.png" alt="Rules">
+				<section>
+					<h2>Cara Bermain</h2>
+					<ul>
+						<li>Gunting dilambangkan dengan dua jari yaitu telunjuk dan jari tengah.</li>
+						<li>Batu dilambangkan dengan kepalan tangan.</li>
+						<li>Kertas dilambangkan dengan lima jari yg dibuka lebar</li>
+						<li>Gesture kertas mengalahkan batu, batu mengalahkan gunting, dan gunting mengalahkan kertas</li>
+						<li>Kedua pemain harus mengeluarkan gesture tangan secara bersamaan, jika ada pemain yg terlambat mengeluarkan gesture tangan maka akan diulang kembali</li>
+						<li>Apabila kedua pemain mengeluarkan gesture tangan yang sama juga akan mengulang permainan sampai didapatkan pemenang</li>
+					</ul>
+				</section>
+			</article>
+			<article id="game" class="card">
+				<h2>Game</h2>
+				<p>Contoh permainan suit/janken bisa dimainkan dibawah ini</p>
+				<p>Untuk melihat peraturan dan cara bermain bisa dilihat di <a href="#rules">peraturan</a>.</p>
+				<h1>Score :</h1>
+				<h1>(Player)</h1>
+				<h1 id="kamu">0</h1>
+				<h1>-</h1>
+				<h1 id="komputer">0</h1>
+				<h1>(Bot)</h1>
+				<h2 id="teks">Hasil</h2>
+				<div class="arena">
+					<div id="player">
+						<img src="img/batu.png" alt="Batu" width="100px;" height="100px;" onclick="pilih('Batu')">
+						<img src="img/gunting.png" alt="Gunting" width="100px;" height="100px;" onclick="pilih('Gunting')">
+						<img src="img/kertas.png" alt="Kertas" width="100px;" height="100px;" onclick="pilih('Kertas')">
+						<br>
+						<p id="txtTgn">Pilih salah satu gesture tangan</p>
+					</div>
+					<div id="vs">
+						<h1>VS</h1>
+					</div>
+					<div id="comp">
+						<img src="img/hide.png" width="100px;" id="tangan-com">
+						<br>
+						<p id="txtTgnBot">(Rahasia)</p>
+					</div>
+				</div>
+				<img src="img/play.png" alt="Play" width="80px" id="play" onclick="suit()">
+			</article>
+		</div>
+	</main>
+	<footer>
+		<p>Hari Prediansyah; 2020, Indonesia</p>
+	</footer>
+	<script src="js/javascript.js"></script>
+</body>
+</html>
